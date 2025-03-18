@@ -1,16 +1,19 @@
-# initial_task_1
+# Slash Plus Initial Task
 
-A new Flutter project.
+A Flutter App that uses the BloC state management library to view data from given config json.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+# Dependencies
 
-A few resources to get you started if this is your first Flutter project:
+This app depends on the following packages:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+• flutter_bloc: ^9.1.0 • video_player: ^2.9.3 • json_annotation: ^4.9.0 • webview_flutter: ^4.10.0
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# API
+
+This app uses the config json from  https://raw.githubusercontent.com/slashplusnp/initial-tasks/main/layout_config_json
+
+Screenshot of App.
+
+
+![Screenshot_1742310734](https://github.com/user-attachments/assets/d237e50c-c1b0-442e-9e17-d34a3cb6e077)
