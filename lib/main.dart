@@ -15,23 +15,23 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Initial Task',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-       
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: Scaffold(
-        body: FutureBuilder<JsonData>(
-          future: loadConfig(),
-          builder: (context, snapshot) {
-            if (snapshot.hasData) {
-              return HomeScreen(data: snapshot.data!);
-            }
-            return const Center(child: CircularProgressIndicator());
-          },
+      home: SafeArea(
+        child: Scaffold(
+          body: FutureBuilder<JsonData>(
+            future: loadConfig(),
+            builder: (context, snapshot) {
+              if (snapshot.hasData) {
+                return HomeScreen(data: snapshot.data!);
+              }
+              return const Center(child: CircularProgressIndicator());
+            },
+          ),
         ),
       ),
     );
   }
 }
-
-

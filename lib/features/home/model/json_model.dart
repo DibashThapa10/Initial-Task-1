@@ -7,7 +7,7 @@ class JsonData {
   final String type;
   final int flex;
   final dynamic data;
-  final List<JsonData> children;
+  final List<JsonData>? children;
 
   JsonData({
     required this.type,
