@@ -1,6 +1,6 @@
 # Slash Plus Initial Task
 
-A Flutter App that uses the BloC state management library to view data from given config json.
+A Flutter App that uses the BloC state management library to view data from provided config json.
 
 
 # Dependencies
